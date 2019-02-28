@@ -18,3 +18,12 @@ Para obtener "cosa_rara" se hace lo siguiente:
 -Se aplica xor de cancion1 con hola y se obtiene cosa1
 -Se aplica xor de cosa1 con cancion3 y se obtiene cosa2
 -Se aplica xor de cosa2 con cancion2 y se obtiene cosa_rara
+
+7) El espacio vectorial es Z2.
+
+
+
+
+
+
+Pd: Para compilar solo se ejecuta el comando "make".
