@@ -82,4 +82,10 @@ int main(){
     scanf("%d",&n);
     int card = zn_estrella(n);
     printf("La cardinalidad de Z%d* es: %d\n",n,card);
+    int r1 = (21*5) % 26;
+    int r2 = (17*5) % 26;
+    int r3 = (16*5) % 26;
+    printf("21*5 módulo 26 es %d\n", r1);
+    printf("17*5 módulo 26 es %d\n", r2);
+    printf("16*5 módulo 26 es %d\n", r3);
 }
