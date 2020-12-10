@@ -107,7 +107,7 @@ def parteCadena(cadena, tam):
 # Fin parteCadena
 
 
-# Devuelve una lista de 3 números: p, q, n.
+# Devuelve una lista de 4 números: p, q, n, phi.
 # Donde p y q son primos, n=p*q y phi = (p-1)*(q-1)
 def multPrimos():
     #Obtiene números primos aleatorios de entre 50 y 60 dígitos.
