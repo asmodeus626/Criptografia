@@ -1,11 +1,16 @@
 
-# Aritmética en campos finitos (zp).
+## @package lenstra
+# Se implementan operaciones en campos finitos, además de
+# el método de Lenstra para encontrar factores de un número.
 
 import random
 import lista_primos
 import math
 
 ## Calcula el máximo común divisor de dos números.
+# @param n Primer número.
+# @param m Segundo número.
+# @return máximo común divisor de n y m.
 def mcd(n,m):
     if n<m:
         a = m
@@ -24,6 +29,7 @@ def mcd(n,m):
 # Se utiliza el algoritmo de Euclides extendido.
 # @param i El número al cual se le calcula el inverso multiplicativo.
 # @param n El módulo.
+# @return inverso multiplicativo de i.
 def inversoMult(i,n):
     x0 = 1
     x1 = 0
@@ -164,6 +170,7 @@ def generaCurva(n):
 # donde el primo p < b y p^a < c.
 # @param b cota para cada primo.
 # @param c cota para el primo elevado a cierta potencia.
+# @return k
 def calcK(b,c):
     lista2 = list()
     i = 0
@@ -177,15 +184,33 @@ def calcK(b,c):
         k = k*numero
     return k
 
+## Recibe un número y genera otro número aleatorio de la mitad de dígitos.
+# @param n Número de referencia para generar otro.
+# @return número de la mitad de dígitos de n.
+def generaNumero(n):
+    num_digitos = 0
+    while n > 0:
+        n = n // 10
+        num_digitos = num_digitos + 1
+    dig2 = num_digitos // 2
+    retVal = 0
+    j = 0
+    for i in range(dig2-1):
+        retVal = retVal + random.randint(0,10)*(10**i)
+        j = i
+    j = j+1
+    retVal = retVal + random.randint(1,10)*(10**j)
+    return retVal
+
 ## Encuentra un factor de un número n o devuelve 0 si fracasa.
 # @param n El número del cual se intenta encontrar un divisor.
-# @return divisor de n
+# @return divisor de n o 0.
 def encuentraFactor(n):
     if n%2 == 0:
         return 2
     if n%3 == 0:
         return 3
-    max_it = 100
+    max_it = 200
     it = 0
     factor = 0
     while it < max_it:
@@ -197,19 +222,34 @@ def encuentraFactor(n):
             gcd = mcd(disc,n)
             if gcd > 1 and gcd < n: # Se encontró un factor :)
                 return gcd
-        k = calcK(50, 10000) # Después se pueden cambiar estas cotas.
+        cota1 = random.randint(15,51)
+        cota2 = generaNumero(n)
+        k = calcK(cota1, cota2)
         puntoRes = multEscalar(k, punto, curva[0], n)
         if len(puntoRes) == 3:
             if puntoRes[2] < n:
                 return puntoRes[2]
         it = it+1
-    print("Falló después de "+str(max_it)+" intentos")
+    print("Falló después de "+str(max_it)+" intentos.")
     return 0
 
 # Parte principal del programa
-print("Ingrese un número compuesto.")
-numero = int(input())
+# Integrantes del equipo:
+# Hernández Zacateco Aldo René
+# Soto Astorga Enrique Francisco
+# Peto Gutiérrez Emmanuel
+print("Ingrese un número compuesto o deje en blanco para generar un número aleatorio.")
+entrada = input()
+if entrada != "":
+    numero = int(entrada)
+else:
+    num1 = lista_primos.primos[random.randint(0, len(lista_primos.primos))]
+    num2 = lista_primos.primos[random.randint(0, len(lista_primos.primos))]
+    numero = num1*num2
 factor = encuentraFactor(numero)
-otro_factor = numero // factor
-par = (factor,otro_factor)
-print("Dos factores del número:", par)
+if factor != 0:
+    otro_factor = numero // factor
+    par = (factor,otro_factor)
+    print("Número elegido:", numero)
+    print("Dos factores del número:", par)
+
