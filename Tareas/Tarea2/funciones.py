@@ -1,4 +1,5 @@
 
+import random
 
 # Convierte un número decimal a binario
 def decToBin(n):
@@ -99,11 +100,82 @@ def logBruto(base, numero, modulo):
 
 # Función que factoriza un número n.
 def factoriza(n):
+    factores = []
+    i = 2
+    while n>1:
+        if(n%i == 0):
+            factores.append(i)
+            n = n//i
+        else:
+            i = i+1
+    return factores
+#Fin factoriza
 
 
-print(5575 % 162)
-#print(((19*106)**2) % 163)
-#print(logBruto(58,104,163))
+# Devuelve verdadero si algun elemento de la lista es mayor a n.
+def algunMayor(lista, n):
+    for elemento in lista:
+        if elemento > n:
+            return True
+    return False
+# Fin algun mayor.
+
+
+# Calcula el máximo común divisor de dos números.
+def mcd(n,m):
+    if n<m:
+        a = m
+        b = n
+    else:
+        a = n
+        b = m
+    
+    r=1
+    while r > 0:
+        r = a % b
+        a = b
+        b = r
+
+    return a
+# Fin mcd
+
+# Calcula el símbolo de jacobi de a y n.
+def jacobi(a,n):
+    if n%2 == 0:
+        return 2
+    
+    if a >= n:
+        a = a%n
+    if a == 0:
+        return 0
+    if a == 1:
+        return 1
+    
+    if a<0:
+        if ((n-1) // 2) % 2 == 0:
+            return jacobi(-a,n)
+        else:
+            return -jacobi(a,n)
+
+    if a%2 == 0:
+        if ((n*n-1) // 8) % 2 == 0:
+            return jacobi(a//2,n)
+        else:
+            return -jacobi(a//2,n)
+
+    g = mcd(a,n)
+    if a == g:
+        return 0
+    elif g != 1:
+        return jacobi(g,n)*jacobi(a//g,n)
+    elif (((a-1)*(n-1))//4) % 2 == 0:
+        return jacobi(n,a)
+    else:
+        return -jacobi(n,a)
+# Fin jacobi
+
+
+print(modPot(6,16,17))
 
 
 

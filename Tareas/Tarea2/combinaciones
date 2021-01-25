@@ -1,0 +1,145 @@
+Potencia: 2 residuo: 9
+[3, 3]
+Potencia: 3 residuo: 27
+[3, 3, 3]
+Potencia: 4 residuo: 81
+[3, 3, 3, 3]
+Potencia: 5 residuo: 80
+[2, 2, 2, 2, 5]
+Potencia: 6 residuo: 77
+[7, 11]
+Potencia: 13 residuo: 20
+[2, 2, 5]
+Potencia: 14 residuo: 60
+[2, 2, 3, 5]
+Potencia: 20 residuo: 56
+[2, 2, 2, 7]
+Potencia: 21 residuo: 5
+[5]
+Potencia: 22 residuo: 15
+[3, 5]
+Potencia: 23 residuo: 45
+[3, 3, 5]
+Potencia: 24 residuo: 135
+[3, 3, 3, 5]
+Potencia: 28 residuo: 14
+[2, 7]
+Potencia: 29 residuo: 42
+[2, 3, 7]
+Potencia: 30 residuo: 126
+[2, 3, 3, 7]
+Potencia: 34 residuo: 100
+[2, 2, 5, 5]
+Potencia: 42 residuo: 25
+[5, 5]
+Potencia: 43 residuo: 75
+[3, 5, 5]
+Potencia: 47 residuo: 44
+[2, 2, 11]
+Potencia: 48 residuo: 132
+[2, 2, 3, 11]
+Potencia: 49 residuo: 70
+[2, 5, 7]
+Potencia: 53 residuo: 128
+[2, 2, 2, 2, 2, 2, 2]
+Potencia: 55 residuo: 11
+[11]
+Potencia: 56 residuo: 33
+[3, 11]
+Potencia: 57 residuo: 99
+[3, 3, 11]
+Potencia: 61 residuo: 32
+[2, 2, 2, 2, 2]
+Potencia: 62 residuo: 96
+[2, 2, 2, 2, 2, 3]
+Potencia: 63 residuo: 125
+[5, 5, 5]
+Potencia: 64 residuo: 49
+[7, 7]
+Potencia: 65 residuo: 147
+[3, 7, 7]
+Potencia: 69 residuo: 8
+[2, 2, 2]
+Potencia: 70 residuo: 24
+[2, 2, 2, 3]
+Potencia: 71 residuo: 72
+[2, 2, 2, 3, 3]
+Potencia: 76 residuo: 55
+[5, 11]
+Potencia: 77 residuo: 2
+[2]
+Potencia: 78 residuo: 6
+[2, 3]
+Potencia: 79 residuo: 18
+[2, 3, 3]
+Potencia: 80 residuo: 54
+[2, 3, 3, 3]
+Potencia: 81 residuo: 162
+[2, 3, 3, 3, 3]
+Potencia: 82 residuo: 160
+[2, 2, 2, 2, 2, 5]
+Potencia: 83 residuo: 154
+[2, 7, 11]
+Potencia: 90 residuo: 40
+[2, 2, 2, 5]
+Potencia: 91 residuo: 120
+[2, 2, 2, 3, 5]
+Potencia: 97 residuo: 112
+[2, 2, 2, 2, 7]
+Potencia: 98 residuo: 10
+[2, 5]
+Potencia: 99 residuo: 30
+[2, 3, 5]
+Potencia: 100 residuo: 90
+[2, 3, 3, 5]
+Potencia: 105 residuo: 28
+[2, 2, 7]
+Potencia: 106 residuo: 84
+[2, 2, 3, 7]
+Potencia: 110 residuo: 121
+[11, 11]
+Potencia: 113 residuo: 7
+[7]
+Potencia: 114 residuo: 21
+[3, 7]
+Potencia: 115 residuo: 63
+[3, 3, 7]
+Potencia: 119 residuo: 50
+[2, 5, 5]
+Potencia: 120 residuo: 150
+[2, 3, 5, 5]
+Potencia: 124 residuo: 88
+[2, 2, 2, 11]
+Potencia: 126 residuo: 140
+[2, 2, 5, 7]
+Potencia: 132 residuo: 22
+[2, 11]
+Potencia: 133 residuo: 66
+[2, 3, 11]
+Potencia: 134 residuo: 35
+[5, 7]
+Potencia: 135 residuo: 105
+[3, 5, 7]
+Potencia: 138 residuo: 64
+[2, 2, 2, 2, 2, 2]
+Potencia: 141 residuo: 98
+[2, 7, 7]
+Potencia: 146 residuo: 16
+[2, 2, 2, 2]
+Potencia: 147 residuo: 48
+[2, 2, 2, 2, 3]
+Potencia: 148 residuo: 144
+[2, 2, 2, 2, 3, 3]
+Potencia: 153 residuo: 110
+[2, 5, 11]
+Potencia: 154 residuo: 4
+[2, 2]
+Potencia: 155 residuo: 12
+[2, 2, 3]
+Potencia: 156 residuo: 36
+[2, 2, 3, 3]
+Potencia: 157 residuo: 108
+[2, 2, 3, 3, 3]
+Potencia: 162 residuo: 1
+[]
+
